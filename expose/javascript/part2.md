@@ -153,3 +153,50 @@ H. `'3' - undefined`
 *Answer:* `NaN`
 
 *Explanation:* When `undefined` is involved in a subtraction operation, the result is `NaN` (Not a Number).
+
+### Question 14
+**Comparison**
+
+A. `'2' > 1`
+
+*Answer:* `true`
+
+*Explanation:* The string `'2'` is converted to a number before the comparison, resulting in `2 > 1`.
+
+B. `'2' < '12'`
+
+*Answer:* `false`
+
+*Explanation:* In string comparison, character by character is compared using Unicode values, and `'2'` has a greater Unicode value than `'1'`.
+
+C. `2 == '2'`
+
+*Answer:* `true`
+
+*Explanation:* The string `'2'` is converted to a number for the comparison, resulting in `2 == 2`.
+
+D. `2 === '2'`
+
+*Answer:* `false`
+
+*Explanation:* The strict equality operator `===` does not perform type coercion, so a number and a string of the same value are not considered equal.
+
+E. `true == 2`
+
+*Answer:* `false`
+
+*Explanation:* `true` is converted to `1` before the comparison, resulting in `1 == 2`, which is false.
+
+F. `true === Boolean(2)`
+
+*Answer:* `true`
+
+*Explanation:* `Boolean(2)` returns `true` since 2 is a truthy value in JavaScript. The strict equality operator then confirms that both are indeed the same boolean value `true`.
+
+### Question 15
+**Explain the difference between the `==` and `===` operators.**
+
+*Answer:*
+
+The `==` operator is the abstract equality operator and compares two values for equality after converting both values to a common type. On the other hand, the `===` operator is the strict equality operator and compares two values for equality without performing type conversion. If the two values are not of the same type, then `===` will immediately return `false`.
+
