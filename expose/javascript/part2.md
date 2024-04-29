@@ -102,3 +102,54 @@ D. *Accessing the name property of the object in the Favorite Teacher property i
 E. *Access index zero in the array of the courseLoad property of the student object*
 
 *Answer:* `student.courseLoad[0]`
+
+### Question 13
+**Arithmetic**
+
+A. `'3' + 2`
+
+*Answer:* `'32'`
+
+*Explanation:* The string `'3'` is concatenated with the number `2`, resulting in the string `'32'`.
+
+B. `'3' - 2`
+
+*Answer:* `1`
+
+*Explanation:* JavaScript converts the string `'3'` to a number for the subtraction operation, resulting in the number `1`.
+
+C. `3 + null`
+
+*Answer:* `3`
+
+*Explanation:* `null` is treated as `0` in numeric operations, so `3 + 0` equals `3`.
+
+D. `'3' + null`
+
+*Answer:* `'3null'`
+
+*Explanation:* `null` is converted to a string in concatenation operations, so `'3'` concatenated with `'null'` equals `'3null'`.
+
+E. `true + 3`
+
+*Answer:* `4`
+
+*Explanation:* `true` is converted to `1` in numeric operations, so `1 + 3` equals `4`.
+
+F. `false + null`
+
+*Answer:* `0`
+
+*Explanation:* Both `false` and `null` are treated as `0` in numeric operations, so `0 + 0` equals `0`.
+
+G. `'3' + undefined`
+
+*Answer:* `'3undefined'`
+
+*Explanation:* `undefined` is converted to a string in concatenation operations, so `'3'` concatenated with `'undefined'` equals `'3undefined'`.
+
+H. `'3' - undefined`
+
+*Answer:* `NaN`
+
+*Explanation:* When `undefined` is involved in a subtraction operation, the result is `NaN` (Not a Number).
