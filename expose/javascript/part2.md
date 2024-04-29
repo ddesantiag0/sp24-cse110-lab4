@@ -200,3 +200,10 @@ F. `true === Boolean(2)`
 
 The `==` operator is the abstract equality operator and compares two values for equality after converting both values to a common type. On the other hand, the `===` operator is the strict equality operator and compares two values for equality without performing type conversion. If the two values are not of the same type, then `===` will immediately return `false`.
 
+### Question 17
+**What's the output of `modifyArray([1,2,3], doSomething)`?**
+
+*Answer:* `[2, 4, 6]`
+
+*Explanation:* 
+The function `modifyArray` takes an array and a function. It runs the function on each array item and collects the results. In this case, `doSomething` doubles each number. So `[1,2,3]` becomes `[2, 4, 6]`.
