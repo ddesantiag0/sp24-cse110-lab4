@@ -68,8 +68,8 @@
 
 ### Question 10
 **What will happen at line 12 and why?**
-*Answer:* `3`
 
+*Answer:* `3`
 
 *Explanation:* `length` is a constant within the function scope and accessible at line 12.
 
@@ -79,3 +79,26 @@
 *Answer:* `[50, 100, 150]`
 
 *Explanation:* The function halves each price in the array due to the discount and returns the new values.
+
+### Question 12
+**Given the above Object, write the notation for:**
+
+A. *Accessing the value of the name property in the student object*
+
+*Answer:* `student.name`
+
+B. *Accessing the value of the Grad Year property in the student object*
+
+*Answer:* `student['Grad Year']`
+
+C. *Calling the function for the greeting property in the student object*
+
+*Answer:* `student.greeting()`
+
+D. *Accessing the name property of the object in the Favorite Teacher property in student*
+
+*Answer:* `student['Favorite Teacher'].name`
+
+E. *Access index zero in the array of the courseLoad property of the student object*
+
+*Answer:* `student.courseLoad[0]`
