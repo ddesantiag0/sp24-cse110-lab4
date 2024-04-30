@@ -207,3 +207,25 @@ The `==` operator is the abstract equality operator and compares two values for 
 
 *Explanation:* 
 The function `modifyArray` takes an array and a function. It runs the function on each array item and collects the results. In this case, `doSomething` doubles each number. So `[1,2,3]` becomes `[2, 4, 6]`.
+
+### Question 19
+**What is the output of the above code?**
+
+*Answer:* 
+
+The output sequence of the code is:
+
+1
+
+4
+
+3
+
+2
+
+*Explanation:* 
+
+- **`console.log(1);`** prints `1`.
+- **`console.log(4);`** runs next and prints `4`.
+- **`console.log(3);`** is set to run after a 0 ms delay but waits until the current code finishes, so it prints `3` third.
+- **`console.log(2);`** is delayed by 1000 ms and prints last.
